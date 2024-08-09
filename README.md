@@ -5,6 +5,6 @@ Here I used to create a memory stack, from this user can undo and redo their wor
 # Technologies used 
 HTML, CSS, Bootstrap, Java Script
 
-#creater name 
+# creater name 
 Riyanka Sarkar
 
