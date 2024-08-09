@@ -1,0 +1,93 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #EADBC8; 
+    min-height: 100vh;
+    font-size: 12px;
+}
+
+.undo-redo-controls {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FEFDED; 
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px #8a795d;
+    z-index: 10;
+}
+
+button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.controls {
+    margin: 10px;
+    display: flex;
+    height: 40vh;
+    flex-direction: column;
+    position: fixed;
+    right: 60px;
+    top: 60px;
+    background-color: #FEFDED; 
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px #8a795d;
+    justify-content: space-around;
+    z-index: 5;
+}
+
+.editing-area {
+    width: 50%;
+    height: 90vh;
+    border: 1px solid #ccc;
+    position: relative;
+    background-color: #f9f9f9;
+    right: 100px;
+    overflow: hidden;
+    margin-left: 340px; 
+    box-shadow: 5px 5px 5px #8a795d;
+}
+
+.text-element {
+    position: absolute;
+    cursor: move;
+    user-select: none;
+    padding: 3px;
+}
+
+.text-element.selected {
+    outline: 1px dashed #000;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .controls {
+        left: 10px;
+        top: 10px;
+    }
+
+    .editing-area {
+        width: calc(100% - 120px); 
+        margin-left: 120px; 
+    }
+}
